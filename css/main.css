@@ -1,0 +1,47 @@
+html{
+box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+.inset-left {
+  float: left;
+  width: 20%;
+  margin-right: 15px;
+}
+
+.p2{
+  clear: both;
+}
+
+.inset-left-2 {
+  float: left;
+  width: 20%;
+  margin-right: 15px;
+  clear: left;
+}
+
+div{
+  background-color: coral;
+  border: 1px solid black;
+  /* Remind the element to wrap around its floated children*/
+  overflow: hidden;
+
+}
+
+main{
+  background-color: purple;
+  float: left;
+  /*width: calc(75% - 2rem);*/
+  width: 75%;
+  padding: 1rem;
+}
+
+aside{
+  background-color: darkgreen;
+  float: left;
+  /*width: calc(25% - 2rem);*/
+  width: 25%;
+  padding: 1rem;
+}
